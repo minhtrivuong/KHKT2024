@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer sk-2jEbpeUKTaccHMEjtklxij1geT8UcEIDwL1E18nVpyT3BlbkFJ11xXZSHmsArkCZQmJlPA8dJmKcaNvf2Fy3FJD0EAUA' 
+          'Authorization': 'Bearer APIkey' 
         },
         body: JSON.stringify({
           model: 'gpt-4o-mini',
