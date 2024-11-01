@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kiểm Tra Sức Khỏe</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">Kiểm Tra Sức Khỏe</h1>
+        <p id="description"><em>Chuẩn đoán bệnh</em></p>
+      </header>
+    </div>
+
+    <form id="survey-form">
+      <div>
+        <fieldset>
+          <label id="name-label">Tên
+            <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+          </label>
+
+          <label id="email-label">Email
+            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+          <label>Tuổi?
+            <input type="number" name="age" placeholder="Nhập tuổi của bạn">
+          </label>
+
+          <label>Giới tính?
+            <input type="text" name="gender" placeholder="Nam hoặc nữ">
+          </label>
+
+          <label>Chiều cao và cân nặng?
+            <textarea rows="2" cols="20" name="heightWeight" placeholder="Nhập chiều cao và cân nặng"></textarea>
+          </label>
+	 
+	<label>Nhịp tim vừa đo được ?
+            <input type="number" name="heartRatePerMinute" placeholder="nhịp tim của bạn là :">
+          </label>
+
+          <label>Lối sống?
+            <textarea rows="3" cols="30" name="lifestyle" placeholder="Năng động, ít vận động, hút thuốc, không hút thuốc..."></textarea>
+          </label>
+
+          <label>Tiền sử bệnh lý?
+            <textarea rows="3" cols="30" name="medicalHistory" placeholder="Những bệnh tật hoặc phẫu thuật nào đã gặp phải"></textarea>
+          </label>
+
+          <label>Thuốc đang sử dụng?
+            <textarea rows="3" cols="30" name="medications" placeholder="Tên thuốc (nếu có)"></textarea>
+          </label>
+
+          <label>Dị ứng?
+            <textarea rows="3" cols="30" name="allergies" placeholder="Nêu các loại dị ứng của bạn (nếu có)"></textarea>
+          </label>
+
+          <label>Triệu chứng chính?
+            <textarea rows="3" cols="30" name="mainSymptoms" placeholder="Nhập triệu chứng chính"></textarea>
+          </label>
+           
+	<label>Đặc điểm nổi bật của triệu chứng?
+            <textarea rows="3" cols="30" name="SalientFeatureSymptoms" placeholder="đặc điểm nổi bật nhất"></textarea>
+          </label>
+	
+          <label>Khi nào triệu chứng bắt đầu?
+            <textarea rows="3" cols="30" name="symptomStart" placeholder="Nhập thời điểm triệu chứng bắt đầu"></textarea>
+          </label>
+
+          <label>Bạn gặp triệu chứng này bao lâu một lần?
+            <textarea rows="3" cols="30" name="symptomFrequency" placeholder="Liên tục, không thường xuyên, lúc có lúc không"></textarea>
+          </label>
+
+          <label>Vị trí của triệu chứng?
+            <textarea rows="3" cols="30" name="symptomLocation" placeholder="Vị trí triệu chứng (đầu, ngực, bụng, v.v.)"></textarea>
+          </label> 
+
+	<label>Loại đau?
+            <textarea rows="3" cols="30" name="painType" placeholder="Đau nhói, đau âm ỉ, đau nhức, nóng rát, v.v."></textarea>
+          </label>
+
+          <label>Mức độ đau (thang điểm từ 1 đến 10)?
+            <textarea rows="1" cols="5" name="painLevel" placeholder="Nhập mức độ đau"></textarea>
+          </label>
+
+          <label>Có điều gì làm triệu chứng thuyên giảm hay trầm trọng hơn không?
+            <textarea rows="3" cols="30" name="symptomTriggers" placeholder="Vận động, thức ăn, thuốc..."></textarea>
+          </label>
+
+          <label>Bạn đã từng gặp triệu chứng này trước đây chưa?
+            <textarea rows="3" cols="30" name="previousSymptoms" placeholder="Có hoặc không (nếu có, nhập thông tin chi tiết)"></textarea>
+          </label>
+
+          <label>Bạn có gặp bất kỳ triệu chứng nào sau đây không?
+            <textarea rows="3" cols="30" name="otherSymptoms" placeholder="Sốt, mệt mỏi, giảm/tăng cân, buồn nôn, chóng mặt, khó thở, phát ban, sưng, thay đổi khẩu vị, thay đổi thói quen đại tiện hoặc tiểu tiện"></textarea>
+          </label>
+
+          <label>Bạn có trải qua bất kỳ thay đổi nào trong cuộc sống gần đây hoặc bị căng thẳng không?
+            <textarea rows="3" cols="30" name="lifeChanges" placeholder="Ví dụ: du lịch, chế độ ăn mới, thói quen tập thể dục mới, căng thẳng công việc"></textarea>
+          </label>
+
+          <label>Bạn có tiếp xúc với bất kỳ bệnh tật hoặc yếu tố môi trường nào không?
+            <textarea rows="3" cols="30" name="environmentalFactors" placeholder="Thuốc mới, người bị bệnh, chất ô nhiễm"></textarea>
+          </label>
+
+          <label>Có bị chấn thương hoặc tai nạn gần đây không?
+            <textarea rows="3" cols="30" name="injuries" placeholder="Có hoặc không (nếu có, mô tả sự kiện)"></textarea>
+          </label>
+
+          <label>Chất lượng giấc ngủ của bạn như thế nào?
+            <textarea rows="3" cols="30" name="sleepQuality" placeholder="Mô tả chất lượng giấc ngủ"></textarea>
+          </label>
+
+          <label>Bạn có nhận thấy bất kỳ thay đổi nào trong tâm trạng hoặc sức khỏe tinh thần không?
+            <textarea rows="3" cols="30" name="mentalHealth" placeholder="Lo âu, trầm cảm, thay đổi tâm trạng"></textarea>
+          </label>
+
+          <label>Mô tả chế độ ăn uống hàng ngày của bạn?
+            <textarea rows="3" cols="30" name="diet" placeholder="Mô tả chế độ ăn uống của bạn"></textarea>
+          </label>
+
+          <label>Bạn uống bao nhiêu nước mỗi ngày?
+            <textarea rows="3" cols="30" name="waterIntake" placeholder="Nhập lượng nước uống mỗi ngày"></textarea>
+          </label>
+
+          <button type="submit" id="submit">Submit</button>
+	  <a id = "ketqua"></a>
+        </fieldset>
+      </div>
+    </form>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

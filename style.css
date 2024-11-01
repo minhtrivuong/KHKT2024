@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Arrus';
+  src: url('path-to-arrus-font/arrus.woff2') format('woff2'),
+       url('path-to-arrus-font/arrus.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, input, select, button, p, label, textarea {
+  font-family: 'Arrus', sans-serif;
+}
+
+input, select, button {
+  display: block;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+button {
+  background-color: fuchsia;
+  color: #FFFFFF;
+  border: 0;
+  height: 2.5em;
+  width: 15em;
+  display: block;
+  font-size: 1.1rem;
+  margin: 1em auto;
+  border-radius: 8px; /* Rounded corners for the button */
+}
+
+p, input, label, select, textarea {
+  font-size: 18px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+body {
+  background-color: gray;
+  color: white;
+}
+
+input, textarea, select {
+  width: 100%;
+  border-radius: 8px; /* Rounded corners for input areas */
+}
+
+input {
+  margin: 0 auto;
+}
+
+.smallerfont {
+  display: inline-block;
+  margin: 1 auto;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+fieldset {
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+a {
+  max-width: 1000px;
+  font-size: 30px;
+  color: white;
+
+}
